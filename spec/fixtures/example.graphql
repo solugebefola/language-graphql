@@ -194,6 +194,11 @@
 ##   ^^^^^ ^^^^^^^^^^^^^  string.quoted.double.graphql
 ##                      ^ punctuation.definition.string.end.graphql
     someField: SomeReturnType
+##  ^^^^^^^^^^ ^^^^^^^^^^^^^^ meta.type.interface.graphql
+    "Field documentation"
+##  ^                     punctuation.definition.string.begin.graphql
+##   ^^^^^ ^^^^^^^^^^^^^  string.quoted.double.graphql
+##                      ^ punctuation.definition.string.end.graphql
     anotherField(
       """
 ##    ^^^ punctuation.definition.string.begin.graphql
