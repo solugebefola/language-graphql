@@ -106,7 +106,7 @@
     "graphql-type-definition": {
       "comment": "key (optionalArgs): Type",
       "begin": "\\s*([_A-Za-z][_0-9A-Za-z]*)(?=\\s*\\(|:)",
-      "end": "(?=\\s*(([_A-Za-z][_0-9A-Za-z]*)\\s*(\\(|:)|(})))|\\s*(,)",
+      "end": "(?=\\s*(([_A-Za-z][_0-9A-Za-z]*)\\s*(\\(|:)|(})))|\\s*(,|\\n)",
       "beginCaptures": {
         "1": { "name": "variable.graphql" }
       },
@@ -440,8 +440,8 @@
     },
     "graphql-string-value": {
       "contentName": "string.quoted.double.graphql",
-      "begin": "\\s*+((\"))",
-      "end": "\\s*+(?:((\"))|(\n))",
+      "begin": "\\s*?((\"))",
+      "end": "\\s*?(?:((\"))|(\n))",
       "beginCaptures": {
         "1": { "name": "string.quoted.double.graphql" },
         "2": { "name": "punctuation.definition.string.begin.graphql" }
